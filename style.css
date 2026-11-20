@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation bar{
+    display: inline-block;
+}
+
+body {
+    /* Replace 'background.jpg' with your actual background image */
+    background-image: url('background.jpg'); 
+    background-color: #163033; /* Fallback dark teal color */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Navbar Layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px 15px 0; /* Flush to the left edge as shown in the image */
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9e9e9e;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', serif;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.divider {
+    color: #9e9e9e;
+    font-size: 18px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+     cursor: pointer;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('perfume1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+}
+
+ul{
+    margin-left: 60%;
+}
+li{
+    color:grey;
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+input{
+    padding: 15px;
+    width: 60%;
+}
+
+
+
+/* Page Heading */
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+

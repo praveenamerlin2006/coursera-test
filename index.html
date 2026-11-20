@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Food, LLC - Our Menu</title>
+
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <h1 class="logo">Foods , LCC</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+          <!-- NAVBAR -->
+    <nav class="navbar navbar-default" id="main-navbar">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                  <div class="container">
+
+        <h1> Our Menu </h1>
+            
+
+    </div>
+
+               
+
+                <!-- Mobile Menu Button -->
+                <button type="button"
+                class="navbar-toggle collapsed visible-xs"
+                id="menu-button"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-menu visible-xs"
+            id="mobile-menu">
+
+                <ul class="nav navbar-nav">
+
+                    <li><a href="#chicken">Chicken</a></li>
+
+                    <li><a href="#beef">Beef</a></li>
+
+                    <li><a href="#sushi">Sushi</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- PAGE HEADING -->
+  
+
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <section class="food-section" id="chicken">
+
+                    <h2 class="text-center">Chicken</h2>
+  <center> <img src="chicken.jpg.png" alt="Chicken dishes" class="menu-img" width="500"> </center>
+
+
+                    <p>
+                        Welcome to Food, LLC!
+
+                        Chicken is one of the most popular food
+                        items around the world.
+
+                        It can be prepared in many different ways,
+                        including grilled chicken, fried chicken,
+                        chicken curry and chicken soup.
+
+                        Our menu offers delicious food made
+                        with fresh ingredients.
+
+                        We believe that good food brings
+                        happiness to everyone.
+
+                        This is our special chicken section.
+                        Enjoy exploring our food menu!
+
+                        <br><br>
+
+                        Thank you for visiting Food, LLC.
+                        We hope you enjoy our menu.
+
+                        <br><br>
+
+                        Good food, good mood!
+                    </p>
+
+                    <h2 class="text-center" id="beef">
+                        Beef
+                    </h2>
+  <center> <img src="beef.jpg.png" alt="Beef dishes" class="menu-img" width="500"> </center>
+
+
+                    <p>
+                        Beef is another popular food choice.
+                        It can be prepared in different styles
+                        and served with delicious sides.
+
+                        Explore our menu and discover
+                        different food varieties.
+
+                        <br><br>
+
+                        Fresh ingredients and great taste
+                        make every meal special.
+                    </p>
+
+                    <h2 class="text-center" id="sushi">
+                        Sushi
+                    </h2>
+
+                     <center> <img src="sushi.jpg.png" alt="Sushi platter" class="menu-img" width="500"> </center>
+<br>
+                    <p>
+                        Sushi is a traditional Japanese dish.
+                        It is known for its unique
+                        variety of ingredients. It is commonly prepared with seasoned rice and various ingredients. It can include vegetables, seafood and seaweed. Sushi is famous for its unique taste and beautiful presentation.
+
+                        Enjoy discovering different
+                        international food styles at Food, LLC.
+
+                        <br>
+
+                        Thank you for visiting!
+                    </p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        var menuButton = document.getElementById("menu-button");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+
+        menuButton.addEventListener("click", function () {
+
+            mobileMenu.classList.toggle("menu-open");
+
+            var isOpen = mobileMenu.classList.contains("menu-open");
+
+            menuButton.setAttribute("aria-expanded", isOpen);
+
+        });
+
+    </script>
+
+</body>
+</html>
+
+
