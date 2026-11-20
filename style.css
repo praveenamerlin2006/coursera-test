@@ -9,9 +9,6 @@
 }
 
 body {
-    /* Replace 'background.jpg' with your actual background image */
-    background-image: url('background.jpg'); 
-    background-color: #163033; /* Fallback dark teal color */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,14 +40,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #9e9e9e;
-    font-size: 18px;
+    color: black;
+    font-size: 14px;
     font-family: Georgia, 'Times New Roman', serif;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ffffff;
+    color: grey;
 }
 
 .divider {
@@ -76,7 +73,7 @@ ul{
     margin-left: 60%;
 }
 li{
-    color:grey;
+    color:black;
     cursor: pointer;
 }
 li:hover{
@@ -92,9 +89,9 @@ input{
 /* Page Heading */
 
 h1 {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 
