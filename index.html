@@ -1,192 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Food, LLC - Our Menu</title>
-
-    <!-- Bootstrap 3 CSS -->
-    <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC - Restaurant & Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="hero-section">
-        <!-- Navigation Bar -->
+
+    <!-- Top Navigation Bar -->
+    <header class="top-header">
         <nav class="navbar">
-            <h1 class="logo">Foods , LCC</h1>
+            <a href="#home" class="brand-logo">Food, LLC</a>
             <ul class="nav-links">
-                <li><a href="#">Home|</a></li>
-                <li><a href="#">Products|</a></li>
-                <li><a href="#">AboutUs|</a></li>
-                <li><a href="#">Contacts|</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-          <!-- NAVBAR -->
-    <nav class="navbar navbar-default" id="main-navbar">
+    </header>
 
-        <div class="container-fluid">
+    <!-- Hero Section -->
+    <section class="hero-banner" id="home">
+        <div class="hero-overlay">
+            <h1>Welcome to Food, LLC</h1>
+            <p>Explore our delicious offerings and fresh meals</p>
+            <a href="#menu" class="btn-gold">Explore Menu</a>
+        </div>
+    </section>
 
-            <div class="navbar-header">
-                  <div class="container">
-
-        <h1> Our Menu </h1>
-            
-
-    </div>
-
-               
-
-                <!-- Mobile Menu Button -->
-                <button type="button"
-                class="navbar-toggle collapsed visible-xs"
-                id="menu-button"
-                aria-expanded="false"
-                aria-controls="mobile-menu">
-
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-
-                </button>
-
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Welcome to Food, LLC! We believe that good food brings happiness to everyone.</p>
+                <p>Our menu offers delicious food made with fresh ingredients and great taste to make every meal special.</p>
             </div>
-
-            <!-- Mobile Dropdown Menu -->
-            <div class="mobile-menu visible-xs"
-            id="mobile-menu">
-
-                <ul class="nav navbar-nav">
-
-                    <li><a href="#chicken">Chicken</a></li>
-
-                    <li><a href="#beef">Beef</a></li>
-
-                    <li><a href="#sushi">Sushi</a></li>
-
-                </ul>
-
+            <div class="about-image">
+                <img src="chicken.jpg.png" alt="About Food, LLC">
             </div>
+        </div>
+    </section>
 
+    <!-- Our Specials Section -->
+    <section class="specials-section">
+        <h2 class="section-title">Our Specials</h2>
+        <div class="specials-grid">
+            <div class="special-card">
+                <img src="chicken.jpg.png" alt="Chicken Special">
+                <h3>Chicken Special</h3>
+            </div>
+            <div class="special-card">
+                <img src="beef.jpg.png" alt="Beef Special">
+                <h3>Beef Special</h3>
+            </div>
+            <div class="special-card">
+                <img src="sushi.jpg.png" alt="Sushi Special">
+                <h3>Sushi Special</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-subtitle">Explore our delicious offerings</p>
+
+        <h3 class="menu-category">Chicken</h3>
+        <div class="menu-item">
+            <img src="chicken.jpg.png" alt="Chicken dishes">
+            <div class="menu-details">
+                <h4>Grilled & Fried Chicken</h4>
+                <p>Prepared in many delicious ways including grilled chicken, fried chicken, chicken curry, and chicken soup with fresh ingredients.</p>
+            </div>
+            <span class="menu-price">$14</span>
         </div>
 
-    </nav>
-
-    <!-- PAGE HEADING -->
-  
-
-    <!-- MAIN CONTENT -->
-    <div class="container-fluid">
-
-        <div class="row">
-
-            <div class="col-xs-12">
-
-                <section class="food-section" id="chicken">
-
-                    <h2 class="text-center">Chicken</h2>
-  <center> <img src="chicken.jpg.png" alt="Chicken dishes" class="menu-img" width="500"> </center> <br>
-
-
-                    <p>
-                        Welcome to Food, LLC!
-
-                        Chicken is one of the most popular food
-                        items around the world.
-
-                        It can be prepared in many different ways,
-                        including grilled chicken, fried chicken,
-                        chicken curry and chicken soup.
-
-                        Our menu offers delicious food made
-                        with fresh ingredients.
-
-                        We believe that good food brings
-                        happiness to everyone.
-
-                        This is our special chicken section.
-                        Enjoy exploring our food menu!
-
-                        <br>
-
-                        Thank you for visiting Food, LLC.
-                        We hope you enjoy our menu.
-
-                        <br><br>
-
-                        Good food, good mood!
-                    </p>
-
-                    <h2 class="text-center" id="beef">
-                        Beef
-                    </h2>
-  <center> <img src="beef.jpg.png" alt="Beef dishes" class="menu-img" width="500"> </center> <br>
-
-
-                    <p>
-                        Beef is another popular food choice.
-                        It can be prepared in different styles
-                        and served with delicious sides.
-
-                        Explore our menu and discover
-                        different food varieties.
-
-                        <br><br>
-
-                        Fresh ingredients and great taste
-                        make every meal special.
-                    </p>
-
-                    <h2 class="text-center" id="sushi">
-                        Sushi
-                    </h2>
-
-                     <center> <img src="sushi.jpg.png" alt="Sushi platter" class="menu-img" width="500"> </center> <br>
-<br>
-                    <p>
-                        Sushi is a traditional Japanese dish.
-                        It is known for its unique
-                        variety of ingredients. It is commonly prepared with seasoned rice and various ingredients. It can include vegetables, seafood and seaweed. Sushi is famous for its unique taste and beautiful presentation.
-
-                        Enjoy discovering different
-                        international food styles at Food, LLC.
-
-                        <br>
-
-                        Thank you for visiting!
-                    </p>
-
-                </section>
-
+        <h3 class="menu-category">Beef</h3>
+        <div class="menu-item">
+            <img src="beef.jpg.png" alt="Beef dishes">
+            <div class="menu-details">
+                <h4>Classic Beef Platter</h4>
+                <p>Prepared in different styles and served with delicious sides, fresh ingredients, and great taste.</p>
             </div>
-
+            <span class="menu-price">$18</span>
         </div>
 
-    </div>
+        <h3 class="menu-category">Sushi</h3>
+        <div class="menu-item">
+            <img src="sushi.jpg.png" alt="Sushi platter">
+            <div class="menu-details">
+                <h4>Traditional Sushi Roll</h4>
+                <p>Traditional Japanese dish prepared with seasoned rice, vegetables, seafood, and seaweed with unique taste and presentation.</p>
+            </div>
+            <span class="menu-price">$16</span>
+        </div>
+    </section>
 
-    <!-- JAVASCRIPT -->
-    <script>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Get in Touch with Us</p>
 
-        var menuButton = document.getElementById("menu-button");
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@foodllc.com</p>
 
-        var mobileMenu = document.getElementById("mobile-menu");
+                <h3>Business Hours</h3>
+                <p>Monday to Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday & Sunday: 9:00 AM - 11:00 PM</p>
+            </div>
 
-        menuButton.addEventListener("click", function () {
+            <form class="contact-form">
+                <h3>Contact Form</h3>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit" class="btn-gold">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-            mobileMenu.classList.toggle("menu-open");
-
-            var isOpen = mobileMenu.classList.contains("menu-open");
-
-            menuButton.setAttribute("aria-expanded", isOpen);
-
-        });
-
-    </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Thank you for visiting Food, LLC. Good food, good mood!</p>
+    </footer>
 
 </body>
 </html>
