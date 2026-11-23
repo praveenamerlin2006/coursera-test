@@ -7,9 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
+    <header class="navbar">
+    <div class="nav-top">
+      <a href="#top" class="navbar-brand">Food, LLC</a>
+      <button type="button" class="navbar-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navDropdown">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-  <header class="top-bar">
-    <h1>Food, LLC</h1>
+    <nav id="navDropdown" class="nav-collapse">
+      <ul class="nav-list">
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+        <li><a href="#beef">Beef</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    var toggleBtn = document.getElementById("menuToggle");
+    var navDropdown = document.getElementById("navDropdown");
+
+    toggleBtn.addEventListener("click", function () {
+      var isOpen = navDropdown.classList.toggle("open");
+      toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  </script
   </header>
 
   <main class="container">
